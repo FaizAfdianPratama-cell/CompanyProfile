@@ -1,0 +1,64 @@
+# Revolutek - Git Ignore File
+# File ini mencegah file sensitif ter-upload ke Git/GitHub
+
+# Config files (jika nanti ada)
+config.php
+db-config.php
+.env
+.env.local
+.env.production
+
+# Log files
+*.log
+error_log
+php_error.log
+access.log
+
+# Backup files
+*.bak
+*.backup
+*.sql
+*.old
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.phpintel/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Vendor directories (jika pakai Composer)
+/vendor/
+/node_modules/
+
+# Upload directories (jika nanti ada fitur upload)
+/uploads/
+/temp/
+/cache/
+
+# Sensitive documentation
+/private/
+/docs/private/
+
+# Test files
+/tests/
+/test/
+phpunit.xml
+.phpunit.result.cache

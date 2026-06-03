@@ -1,0 +1,24 @@
+# robots.txt for Revolutek Website
+# Mencegah crawling file sensitif
+
+User-agent: *
+# Allow all pages
+Allow: /
+
+# Block sensitive directories
+Disallow: /includes/
+Disallow: /assets/config/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /cache/
+
+# Block sensitive files
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.config$
+Disallow: /*security-headers.php$
+
+# Sitemap location (buat sitemap.xml nanti)
+Sitemap: https://www.revolutek.com/sitemap.xml
